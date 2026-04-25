@@ -1,1 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdilhamid Nur | Sales Portfolio</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0b0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 90px 10%;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+      margin: 0 0 20px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 5vw, 46px);
+      margin: 0 0 20px;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    p {
+      color: #d6d6d6;
+      font-size: 18px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .eyebrow {
+      color: #b7b7b7;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .hero-text {
+      max-width: 700px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      max-width: 620px;
+    }
+
+    .hero img,
+    .about-img {
+      width: 360px;
+      max-width: 100%;
+      border-radius: 28px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.55);
+      object-fit: cover;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px 10px 10px 0;
+      padding: 14px 22px;
+      background: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.2s ease;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #444;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(255,255,255,0.18);
+    }
+
+    .cards,
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .card,
+    .review-card {
+      background: linear-gradient(145deg, #17171d, #101015);
+      border: 1px solid #24242c;
+      padding: 28px;
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+    }
+
+    .stat {
+      font-size: 42px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .review-card p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .contact-box {
+      background: #ffffff;
+      color: #000000;
+      padding: 40px;
+      border-radius: 28px;
+      max-width: 850px;
+    }
+
+    .contact-box p {
+      color: #222222;
+      margin: 12px 0;
+    }
+
+    .contact-box a {
+      color: #000000;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .contact-actions {
+      margin-top: 25px;
+    }
+
+    .contact-actions .button {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    footer {
+      padding: 30px 10%;
+      color: #777777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      section {
+        padding: 70px 7%;
+      }
+
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 70px;
+      }
+
+      .hero img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Sales Portfolio</p>
+      <h1>Hi, I’m Abdi.<br>I don’t wait for leads. I create them.</h1>
+      <p>
+        A top-performing TELUS sales rep known for high-volume outbound,
+        strong closing, and delivering a standout customer experience.
+      </p>
+
+      <div class="buttons">
+        <a href="#results" class="button">See My Results</a>
+        <a href="#pitch" class="button secondary">Watch My Pitch</a>
+        <a href="#contact" class="button secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <img src="suit.jpg" alt="Abdilhamid Nur professional photo">
+  </section>
+
+  <section id="results">
+    <p class="eyebrow">Proven Performance</p>
+    <h2>Results Built Through Outbound and Closing</h2>
+
+    <div class="cards">
+      <div class="card">
+        <div class="stat">60+</div>
+        <h3>Deals Monthly</h3>
+        <p>Consistently closing high-volume sales through outbound, discovery, objection handling, and follow-up.</p>
+      </div>
+
+      <div class="card">
+        <div class="stat">Top 10</div>
+        <h3>Central Canada</h3>
+        <p>Ranked among top-performing TELUS reps through consistent execution and strong customer conversations.</p>
+      </div>
+
+      <div class="card">
+        <div class="stat">16</div>
+        <h3>Lines in One Deal</h3>
+        <p>Closed a major business activation end-to-end and built a client relationship that became repeat business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <p class="eyebrow">About Me</p>
+      <h2>Competitive by Nature. Consistent by Choice.</h2>
+
+      <p>
+        I recently graduated with a diploma in Business Administration,
+        specializing in Supply Chain and Operations Management. That background
+        taught me how to think in systems, stay organized under pressure, and
+        focus on efficiency, follow-through, and measurable outcomes.
+      </p>
+
+      <p>
+        Outside of work, I stay active through the gym and sports. I’m naturally
+        competitive, and I enjoy pushing myself physically and mentally. I also
+        like going for walks, exploring nature, and sightseeing as a way to reset
+        and stay balanced.
+      </p>
+
+      <p>
+        Sales stood out to me because it combines competition, communication,
+        and results. I enjoy turning conversations into trust, understanding what
+        people actually need, and helping them make confident decisions.
+      </p>
+    </div>
+
+    <img class="about-img" src="basketball.jpg" alt="Abdilhamid Nur basketball photo">
+  </section>
+
+  <section id="pitch">
+    <p class="eyebrow">Pitch</p>
+    <h2>Watch Me Sell</h2>
+    <p>
+      A quick look at how I communicate value, overcome objections, build urgency,
+      and keep the message simple.
+    </p>
+
+    <a href="https://www.loom.com/share/3786668acf5f48a5b5cfbf9f1b3495fc" target="_blank" class="button">Watch My Pitch</a>
+  </section>
+
+  <section id="reviews">
+    <p class="eyebrow">Client Feedback</p>
+    <h2>What Customers Say</h2>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <p>“Abdi made my experience a very positive one. He was courteous and knowledgeable. I intend to deal with him again directly when ready to move my internet and home phone to TELUS/Koodo.”</p>
+      </div>
+
+      <div class="review-card">
+        <p>“Abdi is an excellent sales rep. He got everything set up for us to switch to TELUS, kept our old phone number, and even helped with tech support after installation. Very impressed with his level of customer service.”</p>
+      </div>
+
+      <div class="review-card">
+        <p>“Abdi was a pleasure to work with. He asked lots of questions and gave me amazing service. I moved over two lines from Rogers and will encourage friends and family to do the same.”</p>
+      </div>
+
+      <div class="review-card">
+        <p>“Abdi was knowledgeable and had great customer support, ensuring that the phone was working and explaining features specific to my needs.”</p>
+      </div>
+
+      <div class="review-card">
+        <p>“Abdi was excellent and took care of transferring my two phone lines to TELUS from Rogers effectively and timely.”</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s Connect</h2>
+
+    <div class="contact-box">
+      <p>Interested in connecting about sales, outbound, BDR/SDR roles, or customer acquisition?</p>
+
+      <p>Email: <a href="mailto:abdilhamid20@gmail.com">abdilhamid20@gmail.com</a></p>
+
+      <p>LinkedIn: <a href="https://linkedin.com/in/abdilhamid" target="_blank">linkedin.com/in/abdilhamid</a></p>
+
+      <p>Phone: <a href="tel:18194430859">819-443-0859</a></p>
+
+      <div class="contact-actions">
+        <a href="tel:18194430859" class="button">Call Me</a>
+        <a href="mailto:abdilhamid20@gmail.com" class="button">Email Me</a>
+        <a href="https://linkedin.com/in/abdilhamid" target="_blank" class="button">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Abdilhamid Nur. Sales Portfolio.
+  </footer>
+
+</body>
+</html>
